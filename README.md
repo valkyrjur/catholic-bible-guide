@@ -1,4 +1,3 @@
-# beginner-html-site-styled
-A simple one page website created to help complete beginners learn HTML basics, which in this repo has also been styled to help beginners learn CSS basics. The styling is explained over the course of [https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/CSS_basics](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/CSS_basics).
+# catholic-bible-guide
 
-[Run the example live](http://mdn.github.io/beginner-html-site-styled/).
+This guide walks you through all 73 books of the Catholic Bible with short summaries, key teachings, and practical tips on when to read each one — all colour-coded and easy to browse. It's not meant to replace actually reading the Bible (nothing can!), but to help you make sense of it: what each book is about, how it connects to Christ and the sacraments, and where to start when you're not sure.
