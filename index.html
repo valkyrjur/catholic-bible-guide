@@ -1,25 +1,917 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Catholic Bible — A Complete Guide to All 73 Books</title>
+<style>
+:root{--bg:#f5f0e8;--card:#fff;--gold:#7a5c1f;--red:#8b2500;--text:#2c2416;--muted:#6b5e4f;--pent:#6b3a2a;--hist:#2e5e4e;--wisd:#5c4b8a;--proph:#8b4513;--gosp:#8b0000;--acts:#2a6496;--paul:#6a3d7d;--cath:#3e7a5e;--rev:#a0522d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);line-height:1.8;padding:1rem;font-size:1.05rem}
+.container{max-width:900px;margin:0 auto}
+h1{text-align:center;color:var(--gold);font-size:1.8rem;margin:1.5rem 0 .3rem;letter-spacing:2px}
+h2{color:var(--gold);border-bottom:2px solid var(--red);padding-bottom:.3rem;margin:1.8rem 0 .8rem;font-size:1.35rem}
+.subtitle{text-align:center;color:var(--muted);font-style:italic;margin-bottom:1.5rem}
+.cross{text-align:center;color:var(--red);font-size:2rem;margin:1rem 0}
+.intro{background:var(--card);border-left:3px solid var(--red);padding:1rem 1.2rem;margin:.8rem 0;border-radius:0 4px 4px 0}
+.latin{color:#8b0000;font-style:italic;font-weight:bold}
+.note{background:#f7f2e4;border:1px solid var(--gold);padding:.6rem;border-radius:4px;margin:.5rem 0;font-size:.9rem}
+.toc{background:var(--card);padding:1rem;border:1px solid #c5b99a;border-radius:4px;margin:1rem 0}
+.toc a{text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.toc ol{margin:0;padding-left:1.2rem}
+.toc li{margin:.2rem 0;font-size:.95rem}
+details.book{margin:.5rem 0;border-radius:4px;overflow:hidden}
+details.book summary{cursor:pointer;padding:.5rem .8rem;font-weight:bold;font-size:1rem;display:flex;align-items:center;gap:.5rem;border-radius:4px}
+details.book summary:hover{filter:brightness(1.1)}
+details.book[open] summary{border-radius:4px 4px 0 0}
+details.book .content{background:var(--card);padding:.8rem 1rem;border:1px solid #ddd;border-top:none;border-radius:0 0 4px 4px}
+details.book .content p{margin:.4rem 0}
+.when{background:#faf6ee;border-left:3px solid var(--gold);padding:.5rem .8rem;margin:.5rem 0;border-radius:0 4px 4px 0;font-size:.92rem}
+.when strong{color:var(--gold)}
+.teachings{margin:.4rem 0;padding-left:1.3rem}
+.teachings li{margin:.2rem 0;font-size:.95rem}
+.cat-pent summary{background:#f2e6df;color:var(--pent);border:1px solid #d4b8a8}
+.cat-hist summary{background:#e0efe8;color:var(--hist);border:1px solid #a8cdb8}
+.cat-wisd summary{background:#ece6f4;color:var(--wisd);border:1px solid #c4b4d8}
+.cat-proph summary{background:#f4ece0;color:var(--proph);border:1px solid #d4c0a0}
+.cat-gosp summary{background:#f8e8e8;color:var(--gosp);border:1px solid #d4a8a8}
+.cat-acts summary{background:#e4eef6;color:var(--acts);border:1px solid #a8c4d8}
+.cat-paul summary{background:#f0e8f4;color:var(--paul);border:1px solid #c8b0d8}
+.cat-cath summary{background:#e6f0ea;color:var(--cath);border:1px solid #a8c8b4}
+.cat-rev summary{background:#f6ece4;color:var(--rev);border:1px solid #d4b8a0}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0}
+.legend span{padding:.2rem .5rem;border-radius:3px;font-size:.8rem;font-weight:bold}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+td,th{border:1px solid #c5b99a;padding:.3rem .5rem;text-align:left;font-size:.85rem}
+th{background:#f0e8d8;color:var(--gold)}
+.deut{font-size:.75rem;background:#f0e8d8;border:1px solid #c5b99a;padding:.1rem .3rem;border-radius:3px;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="cross">✠</div>
+<h1>THE CATHOLIC BIBLE</h1>
+<p class="subtitle">A Complete Guide to All 73 Books — Summaries, Teachings &amp; When to Read Each One</p>
 
-    <p>At Mozilla, we’re a global community of</p>
+<div class="intro">
+<p>The Catholic Bible contains <strong>73 books</strong>: 46 in the Old Testament and 27 in the New Testament. This includes the 7 <strong>deuterocanonical books</strong> <span class="deut">DC</span> (Tobit, Judith, Wisdom, Sirach, Baruch, 1 &amp; 2 Maccabees) and additional passages in Daniel and Esther, which are part of the Catholic canon but absent from Protestant Bibles.</p>
+<p>This guide presents each book through the lens of <strong>Catholic teaching and Tradition</strong>, drawing on the Church Fathers, the Catechism, and the liturgical use of Scripture. Each entry includes a summary, key teachings, and a pastoral note on <em>when this book speaks most powerfully to your life</em>.</p>
+</div>
 
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+<div class="note">
+<strong>A Note on Interpretation:</strong> The Catholic Church teaches that Scripture must be read within the living Tradition of the Church, guided by the Magisterium. The Bible is not a collection of isolated texts but a unified story of salvation — from Creation to the New Jerusalem — with Christ at its centre. <span class="latin">"Ignoratio Scripturarum, ignoratio Christi est"</span> — Ignorance of Scripture is ignorance of Christ (St. Jerome).
+</div>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+<div class="legend">
+<span style="background:#f2e6df;color:var(--pent)">Pentateuch</span>
+<span style="background:#e0efe8;color:var(--hist)">Historical</span>
+<span style="background:#ece6f4;color:var(--wisd)">Wisdom</span>
+<span style="background:#f4ece0;color:var(--proph)">Prophetic</span>
+<span style="background:#f8e8e8;color:var(--gosp)">Gospels</span>
+<span style="background:#e4eef6;color:var(--acts)">Acts</span>
+<span style="background:#f0e8f4;color:var(--paul)">Pauline</span>
+<span style="background:#e6f0ea;color:var(--cath)">Catholic Epistles</span>
+<span style="background:#f6ece4;color:var(--rev)">Revelation</span>
+</div>
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-  </body>
+<div class="toc">
+<strong>Contents</strong>
+<ol>
+<li><a href="#pentateuch" style="color:var(--pent)">The Pentateuch</a> — Genesis, Exodus, Leviticus, Numbers, Deuteronomy</li>
+<li><a href="#historical" style="color:var(--hist)">Historical Books</a> — Joshua through 2 Maccabees (16 books)</li>
+<li><a href="#wisdom" style="color:var(--wisd)">Wisdom Books</a> — Job, Psalms, Proverbs, Ecclesiastes, Song of Songs, Wisdom, Sirach</li>
+<li><a href="#prophetic" style="color:var(--proph)">Prophetic Books</a> — Isaiah through Malachi (18 books)</li>
+<li><a href="#gospels" style="color:var(--gosp)">The Gospels</a> — Matthew, Mark, Luke, John</li>
+<li><a href="#acts" style="color:var(--acts)">Acts of the Apostles</a></li>
+<li><a href="#pauline" style="color:var(--paul)">Pauline Epistles</a> — Romans through Hebrews (14 letters)</li>
+<li><a href="#catholic-epistles" style="color:var(--cath)">Catholic Epistles</a> — James, 1–2 Peter, 1–3 John, Jude</li>
+<li><a href="#revelation" style="color:var(--rev)">Revelation</a></li>
+</ol>
+</div>
+
+<!-- ============================================================ -->
+<!-- OLD TESTAMENT -->
+<!-- ============================================================ -->
+
+<h2 id="pentateuch">I. The Pentateuch <span style="font-size:.8rem;font-weight:normal">(Torah — The Five Books of Moses)</span></h2>
+<p class="note">The foundation of salvation history. These five books establish God's covenant relationship with humanity, the origins of sin and redemption, and the Law that prepared Israel for the coming of Christ.</p>
+
+<details class="book cat-pent"><summary>📖 Genesis — The Book of Beginnings</summary><div class="content">
+<p><strong>Summary:</strong> Genesis tells the story of creation, the fall of Adam and Eve, the flood, the Tower of Babel, and the patriarchs — Abraham, Isaac, Jacob, and Joseph. It establishes the foundational truths: God created everything good, humanity fell through sin, and God immediately began His plan of redemption through covenant.</p>
+<ul class="teachings">
+<li>God creates <em>ex nihilo</em> — out of nothing — and everything He makes is good (Ch. 1–2)</li>
+<li>Original Sin: the fall of Adam and Eve affects all humanity (Ch. 3; CCC 396–409)</li>
+<li>The <span class="latin">Protoevangelium</span> — the first promise of a Redeemer (Gen 3:15), read by the Church as pointing to Mary and Christ</li>
+<li>God's covenant with Abraham — the father of faith, justified by believing God's promise (Gen 15:6)</li>
+<li>The sacrifice of Isaac (Gen 22) prefigures the sacrifice of Christ, the beloved Son</li>
+<li>Joseph's suffering and exaltation prefigure Christ's Passion and glory</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to remember that God has a plan even in chaos. When you feel the weight of sin and need to hear that redemption was promised from the very beginning. When you're starting something new and want to ground it in God's creative purpose.</div>
+</div></details>
+
+<details class="book cat-pent"><summary>📖 Exodus — Liberation and Covenant</summary><div class="content">
+<p><strong>Summary:</strong> God liberates Israel from slavery in Egypt through Moses, parts the Red Sea, gives the Ten Commandments at Sinai, and establishes the covenant and the Tabernacle. The Passover lamb, the manna, the water from the rock — all are read by the Church as types of Christ and the sacraments.</p>
+<ul class="teachings">
+<li>God hears the cry of the oppressed and acts to save (Ex 3:7–8)</li>
+<li>The Passover Lamb prefigures Christ, the Lamb of God (Ex 12; Jn 1:29; 1 Cor 5:7)</li>
+<li>The crossing of the Red Sea prefigures Baptism (1 Cor 10:1–2; CCC 1221)</li>
+<li>The Ten Commandments — the moral law written on stone and on the heart (Ex 20; CCC 2052–2082)</li>
+<li>Manna from heaven prefigures the Eucharist (Ex 16; Jn 6:31–35)</li>
+<li>The Tabernacle — God dwelling among His people, fulfilled in the Incarnation (Jn 1:14)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you feel enslaved — by addiction, fear, or circumstances — and need to trust that God is a liberator. When you need to recommit to God's commandments. During Lent and Holy Week, when the Church relives the Paschal mystery.</div>
+</div></details>
+
+<details class="book cat-pent"><summary>📖 Leviticus — Holiness and Worship</summary><div class="content">
+<p><strong>Summary:</strong> The book of priestly law: sacrifices, ritual purity, the Day of Atonement, and the Holiness Code. Often considered difficult, but the Catholic tradition sees it as revealing God's desire for a holy people set apart, and as the background for understanding Christ's sacrifice and the sacramental system.</p>
+<ul class="teachings">
+<li>"Be holy, for I the Lord your God am holy" (Lev 19:2) — the universal call to holiness (CCC 2813)</li>
+<li>The sacrificial system points to Christ's one perfect sacrifice (Heb 9–10)</li>
+<li>The Day of Atonement (<span class="latin">Yom Kippur</span>) prefigures Christ's atoning death</li>
+<li>The scapegoat bearing sins away (Lev 16) — a type of Christ bearing our sins</li>
+<li>"Love your neighbour as yourself" first appears here (Lev 19:18)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand the Mass more deeply — why we have a sacrifice, a priest, an altar. When you're preparing for Confession and want to understand what holiness demands. When you feel God is distant and need to see how seriously He takes dwelling with His people.</div>
+</div></details>
+
+<details class="book cat-pent"><summary>📖 Numbers — The Journey Through the Wilderness</summary><div class="content">
+<p><strong>Summary:</strong> Israel's 40-year journey through the desert — marked by census-taking, rebellion, punishment, and God's patient faithfulness. The bronze serpent, Balaam's oracle, and the water from the rock are key episodes the Church reads typologically.</p>
+<ul class="teachings">
+<li>The wilderness journey is a type of the Christian life — a pilgrimage toward the heavenly homeland</li>
+<li>Murmuring and rebellion lead to consequences, but God remains faithful to His promises</li>
+<li>The bronze serpent lifted up (Num 21:8–9) prefigures Christ on the Cross (Jn 3:14–15)</li>
+<li>Balaam's oracle: "A star shall come out of Jacob" (Num 24:17) — a Messianic prophecy</li>
+<li>God provides even when His people complain — manna, quail, water</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're in a "desert season" — feeling lost, tested, or wandering. When you've been unfaithful and need to see that God doesn't abandon His people. When you need patience for a long journey.</div>
+</div></details>
+
+<details class="book cat-pent"><summary>📖 Deuteronomy — The Second Law</summary><div class="content">
+<p><strong>Summary:</strong> Moses' farewell speeches to Israel before they enter the Promised Land. A retelling and deepening of the Law, with passionate exhortations to love God with all your heart. Jesus quotes Deuteronomy more than almost any other book.</p>
+<ul class="teachings">
+<li>The <span class="latin">Shema</span>: "Hear, O Israel: the Lord our God, the Lord is one. You shall love the Lord your God with all your heart…" (Deut 6:4–5) — the greatest commandment</li>
+<li>Moses as a type of Christ — the prophet, lawgiver, and mediator (Deut 18:15; Acts 3:22)</li>
+<li>Blessings and curses: obedience brings life, disobedience brings death (Deut 30:19)</li>
+<li>The importance of teaching the faith to your children (Deut 6:6–9)</li>
+<li>Jesus uses Deuteronomy to defeat Satan in the desert (Mt 4:1–11)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to renew your commitment to God. When you're a parent wanting to pass on the faith. When you face temptation and need the words Jesus Himself used to resist it. Before making a major life decision.</div>
+</div></details>
+
+<h2 id="historical">II. Historical Books <span style="font-size:.8rem;font-weight:normal">(16 Books)</span></h2>
+<p class="note">These books narrate Israel's history from the conquest of the Promised Land through the monarchy, exile, and return. They show God's faithfulness even when His people are unfaithful, and prefigure the Church's own journey through history.</p>
+
+<details class="book cat-hist"><summary>📖 Joshua — Conquest of the Promised Land</summary><div class="content">
+<p><strong>Summary:</strong> Joshua leads Israel across the Jordan into Canaan. The walls of Jericho fall, the land is conquered and divided among the tribes. Joshua's very name (<span class="latin">Yehoshua</span> = "God saves") is the Hebrew form of Jesus.</p>
+<ul class="teachings">
+<li>God fulfils His promises — the land promised to Abraham is given</li>
+<li>Crossing the Jordan prefigures Baptism — entering new life</li>
+<li>Joshua as a type of Christ, leading God's people into their inheritance</li>
+<li>"Choose this day whom you will serve… as for me and my house, we will serve the Lord" (Josh 24:15)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're entering a new chapter of life and need courage. When you need to claim the promises God has made to you. When you need to make a decisive commitment to faith.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Judges — The Cycle of Sin and Deliverance</summary><div class="content">
+<p><strong>Summary:</strong> After Joshua's death, Israel falls into a recurring cycle: sin → oppression → crying out to God → God raises a judge (deliverer) → peace → sin again. Figures include Deborah, Gideon, and Samson. The refrain: "Everyone did what was right in their own eyes."</p>
+<ul class="teachings">
+<li>Without faithful leadership, God's people fall into chaos</li>
+<li>God uses unlikely instruments — a woman (Deborah), a fearful man (Gideon), a flawed strongman (Samson)</li>
+<li>The cycle of sin shows humanity's need for a permanent Saviour, not just temporary deliverers</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you keep falling into the same sins and need to break the cycle. When you feel too weak or unqualified for what God is asking. When you see moral confusion around you.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Ruth — Loyalty, Providence, and Redemption</summary><div class="content">
+<p><strong>Summary:</strong> A Moabite widow clings to her Israelite mother-in-law Naomi and finds redemption through Boaz, the kinsman-redeemer. Ruth becomes the great-grandmother of King David — and an ancestor of Jesus (Mt 1:5).</p>
+<ul class="teachings">
+<li>God's providence works through ordinary faithfulness and love</li>
+<li>Boaz as kinsman-redeemer prefigures Christ, who redeems us by right of kinship (the Incarnation)</li>
+<li>A Gentile woman enters the lineage of Christ — God's salvation is universal</li>
+<li>"Where you go, I will go; your God will be my God" (Ruth 1:16) — a model of covenant fidelity</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you've experienced loss and need to see how God brings beauty from grief. When you feel like an outsider and need to know God welcomes you. When you need a story of quiet, faithful love.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 1 Samuel — The Rise of the Monarchy</summary><div class="content">
+<p><strong>Summary:</strong> The prophet Samuel anoints Saul as Israel's first king, but Saul's disobedience leads to his rejection. God chooses David, the shepherd boy, who defeats Goliath and is anointed as the future king. The contrast between Saul and David illustrates the difference between outward power and a heart after God.</p>
+<ul class="teachings">
+<li>"The Lord looks at the heart" (1 Sam 16:7) — God's criteria differ from the world's</li>
+<li>David as a type of Christ — the anointed one (<span class="latin">Christos/Messiah</span>) from Bethlehem</li>
+<li>Obedience is better than sacrifice (1 Sam 15:22)</li>
+<li>Hannah's prayer (1 Sam 2) prefigures Mary's Magnificat</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you feel overlooked or underestimated. When you're facing a "Goliath" — an overwhelming challenge. When you need to examine whether you're following God's will or your own.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 2 Samuel — David's Reign, Glory, and Fall</summary><div class="content">
+<p><strong>Summary:</strong> David becomes king, conquers Jerusalem, brings the Ark there, and receives God's covenant promise of an everlasting dynasty (2 Sam 7). But David's adultery with Bathsheba and murder of Uriah bring devastating consequences. His repentance is genuine but the damage is real.</p>
+<ul class="teachings">
+<li>The Davidic Covenant — God promises David's throne will last forever, fulfilled in Christ (Lk 1:32–33)</li>
+<li>Even great saints can fall gravely — David's sin is a warning against presumption</li>
+<li>True repentance is always possible — David's contrition (Psalm 51) is a model for Confession</li>
+<li>Sin has consequences even after forgiveness</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you've committed a serious sin and need to know that repentance is possible. When you're experiencing the consequences of past mistakes. When you need to understand God's faithfulness despite human failure.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 1 Kings — Solomon's Wisdom and the Divided Kingdom</summary><div class="content">
+<p><strong>Summary:</strong> Solomon builds the Temple and is renowned for wisdom, but his foreign wives lead him to idolatry. After his death, the kingdom splits: Israel (north) and Judah (south). Elijah the prophet confronts the worship of Baal.</p>
+<ul class="teachings">
+<li>Solomon's Temple prefigures the Church and the heavenly Jerusalem</li>
+<li>Wisdom without fidelity leads to ruin — Solomon's fall is a cautionary tale</li>
+<li>Elijah as a type of John the Baptist, calling people back to the true God</li>
+<li>God speaks not in earthquake or fire but in "a still small voice" (1 Kgs 19:12)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need wisdom for a decision. When you're struggling with divided loyalties. When you feel alone in standing for truth, like Elijah. When you need to listen for God's quiet voice.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 2 Kings — The Fall of Israel and Judah</summary><div class="content">
+<p><strong>Summary:</strong> The northern kingdom falls to Assyria (722 BC) and the southern kingdom to Babylon (586 BC). The Temple is destroyed. Elisha continues Elijah's prophetic ministry. The story is one of decline, but God preserves a remnant.</p>
+<ul class="teachings">
+<li>Persistent idolatry leads to exile — a warning about the consequences of abandoning God</li>
+<li>God always preserves a faithful remnant</li>
+<li>Elisha's miracles (healing Naaman, multiplying bread) prefigure Christ's miracles</li>
+<li>The destruction of the Temple points to the need for a new, spiritual temple — the Church</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When institutions you trusted are failing. When you see the Church or society in crisis and need perspective. When you need to trust that God preserves His people even through catastrophe.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 1 Chronicles — David's Legacy Retold</summary><div class="content">
+<p><strong>Summary:</strong> A retelling of Israel's history from Adam to David, emphasizing the Temple, worship, and the Levitical priesthood. Written after the exile to remind the returned community of their identity and calling.</p>
+<ul class="teachings">
+<li>Worship is central to the life of God's people — the detailed attention to liturgy matters</li>
+<li>David's preparations for the Temple show that we build for future generations</li>
+<li>"Yours, O Lord, is the greatness and the power and the glory" (1 Chr 29:11)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand why liturgy and worship matter so much. When you're building something for the future — a family, a community, a legacy of faith.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 2 Chronicles — The Temple, the Kings, and the Exile</summary><div class="content">
+<p><strong>Summary:</strong> Covers Solomon's Temple through the Babylonian exile. Emphasizes that faithfulness to God brings blessing and unfaithfulness brings disaster. Ends with Cyrus's decree allowing the Jews to return — a note of hope.</p>
+<ul class="teachings">
+<li>"If my people who are called by my name humble themselves and pray… I will heal their land" (2 Chr 7:14)</li>
+<li>Good kings who reform worship bring renewal; bad kings who tolerate idolatry bring ruin</li>
+<li>God's mercy endures — even exile is not the end</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're praying for renewal in the Church or your nation. When you need to believe that repentance can change the course of history. When you feel in "exile" from God.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Ezra — Return and Rebuilding</summary><div class="content">
+<p><strong>Summary:</strong> The Jewish exiles return from Babylon and rebuild the Temple under Zerubbabel, then Ezra leads a spiritual reform — renewing the covenant and purifying worship.</p>
+<ul class="teachings">
+<li>God uses even pagan rulers (Cyrus) to accomplish His purposes</li>
+<li>Rebuilding begins with worship — the altar is restored before the Temple walls</li>
+<li>Spiritual renewal requires returning to God's word and reforming our lives</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're rebuilding after a crisis — a broken relationship, a loss of faith, a fresh start. When you need to prioritise worship in a busy life.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Nehemiah — Rebuilding the Walls</summary><div class="content">
+<p><strong>Summary:</strong> Nehemiah, cupbearer to the Persian king, returns to Jerusalem to rebuild the city walls despite fierce opposition. He combines practical leadership with deep prayer.</p>
+<ul class="teachings">
+<li>Prayer and action go together — Nehemiah prays, then acts</li>
+<li>Opposition to God's work is inevitable but not insurmountable</li>
+<li>Community rebuilding requires both physical and spiritual restoration</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're facing opposition in doing good work. When you need a model of prayerful, practical leadership. When your community needs rebuilding.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Tobit <span class="deut">DC</span> — Faith, Family, and the Angel Raphael</summary><div class="content">
+<p><strong>Summary:</strong> A beautiful story of two faithful families — Tobit (blind and suffering) and Sarah (tormented by a demon) — whose prayers are answered through the angel Raphael in disguise. A tale of marriage, healing, and God's hidden providence.</p>
+<ul class="teachings">
+<li>God hears the prayers of the suffering, even when His answer is not immediate</li>
+<li>The angel Raphael reveals that God sends help we cannot see — guardian angels (CCC 336)</li>
+<li>Marriage is sacred — Tobias and Sarah's wedding night prayer is a model of holy matrimony</li>
+<li>Almsgiving, prayer, and fasting are the three pillars of the spiritual life (Tob 12:8)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're suffering and feel God is silent. When you're preparing for marriage. When you need to believe in God's hidden providence and the ministry of angels. A wonderful book for families.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Judith <span class="deut">DC</span> — Courage and Trust in God</summary><div class="content">
+<p><strong>Summary:</strong> A pious and beautiful widow saves Israel by entering the enemy camp and beheading the Assyrian general Holofernes. The Church Fathers see Judith as a type of Mary — the woman who crushes the head of the enemy.</p>
+<ul class="teachings">
+<li>God uses the weak to defeat the strong — a woman defeats a mighty army</li>
+<li>Judith as a type of Mary, the new Eve who conquers evil (Gen 3:15)</li>
+<li>Fasting and prayer precede great victories</li>
+<li>Trust in God, not in military power or human strength</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you face an overwhelming enemy or impossible situation. When you need courage to act boldly for God. When you want to meditate on Mary's role in salvation.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 Esther — Providence Behind the Scenes</summary><div class="content">
+<p><strong>Summary:</strong> Queen Esther risks her life to save the Jewish people from genocide in Persia. The Catholic version includes Esther's prayers and explicit references to God (absent in the Hebrew text). The feast of Purim celebrates this deliverance.</p>
+<ul class="teachings">
+<li>"Perhaps you have come to the kingdom for such a time as this" (Esth 4:14) — God places us where we're needed</li>
+<li>God's providence works even when He seems hidden</li>
+<li>Courage in the face of injustice is a moral duty</li>
+<li>Esther as a type of Mary — the queen who intercedes for her people</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you wonder why God has placed you in a particular situation. When you need courage to speak up against injustice. When God seems absent but you suspect He's working behind the scenes.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 1 Maccabees <span class="deut">DC</span> — The Fight for Religious Freedom</summary><div class="content">
+<p><strong>Summary:</strong> The Maccabean revolt against the Greek Seleucid empire, which tried to suppress Jewish worship and desecrate the Temple. Judas Maccabeus leads a guerrilla war, recaptures Jerusalem, and rededicates the Temple (the origin of Hanukkah).</p>
+<ul class="teachings">
+<li>Religious liberty is worth fighting for — the right to worship God freely</li>
+<li>Faithfulness to God's law even unto death — the Maccabean martyrs (CCC 2473)</li>
+<li>The rededication of the Temple prefigures Christ's cleansing of the Temple</li>
+<li>Judas Maccabeus prays for the dead (2 Macc 12:46) — a key text for the doctrine of Purgatory</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When religious freedom is threatened. When you need courage to defend the faith. When you want to understand the Catholic basis for praying for the dead.</div>
+</div></details>
+
+<details class="book cat-hist"><summary>📖 2 Maccabees <span class="deut">DC</span> — Martyrdom, Resurrection, and Prayer for the Dead</summary><div class="content">
+<p><strong>Summary:</strong> A theological retelling of the Maccabean revolt, focusing on the martyrdom of Eleazar and the seven brothers, the doctrine of resurrection, and Judas's offering for the dead. This book is doctrinally crucial for Catholic teaching.</p>
+<ul class="teachings">
+<li>The resurrection of the body: "The King of the universe will raise us up to an everlasting renewal of life" (2 Macc 7:9)</li>
+<li>Prayer and sacrifice for the dead — "It is a holy and wholesome thought to pray for the dead" (2 Macc 12:46) — foundation for the doctrine of Purgatory (CCC 1032)</li>
+<li>The intercession of saints: Jeremiah and Onias pray for Israel from beyond death (2 Macc 15:12–16)</li>
+<li>Creation <span class="latin">ex nihilo</span> — "God made them out of nothing" (2 Macc 7:28)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're grieving and want to pray for a loved one who has died. When you need to understand Purgatory and the communion of saints. When you need the courage of martyrs. When someone questions why Catholics pray for the dead — this is the biblical basis.</div>
+</div></details>
+
+<h2 id="wisdom">III. Wisdom Books <span style="font-size:.8rem;font-weight:normal">(7 Books)</span></h2>
+<p class="note">The Wisdom literature reflects on the meaning of life, suffering, love, and the fear of the Lord. These books are the Bible's poetry and philosophy — deeply human, profoundly theological. The Church reads them as preparation for Christ, who is the Wisdom of God (<span class="latin">Sapientia Dei</span>, 1 Cor 1:24).</p>
+
+<details class="book cat-wisd"><summary>📖 Job — The Mystery of Suffering</summary><div class="content">
+<p><strong>Summary:</strong> A righteous man loses everything — wealth, children, health — and wrestles with the question of why the innocent suffer. His friends offer bad theology ("you must have sinned"). God answers from the whirlwind, not by explaining suffering but by revealing His own majesty and mystery. Job is restored.</p>
+<ul class="teachings">
+<li>Suffering is not always punishment for sin — this is a central Catholic teaching against simplistic "prosperity theology"</li>
+<li>God is sovereign over all things, even what we cannot understand</li>
+<li>Job prefigures Christ — the innocent sufferer who trusts the Father</li>
+<li>"I know that my Redeemer lives" (Job 19:25) — read in the Catholic funeral liturgy</li>
+<li>The proper response to mystery is not explanation but worship</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you or someone you love is suffering and it makes no sense. When people offer you easy answers that ring hollow. When you need to sit with mystery rather than demand explanations. One of the most important books for anyone in pain.</div>
+</div></details>
+
+<details class="book cat-wisd"><summary>📖 Psalms — The Prayer Book of the Church</summary><div class="content">
+<p><strong>Summary:</strong> 150 hymns and prayers covering every human emotion — praise, lament, thanksgiving, repentance, rage, trust, despair, and joy. The Psalms are the backbone of the Divine Office (Liturgy of the Hours) and are prayed daily by priests, religious, and laity worldwide. Jesus prayed the Psalms, and His last words on the Cross were from Psalm 22.</p>
+<ul class="teachings">
+<li>Every human emotion can be brought to God — nothing is too raw for prayer</li>
+<li>The Messianic Psalms (2, 22, 110, etc.) are fulfilled in Christ</li>
+<li>Psalm 51 (<span class="latin">Miserere</span>) — the great penitential psalm, prayed before every Confession</li>
+<li>Psalm 23 — "The Lord is my shepherd" — the most beloved prayer of trust</li>
+<li>The Psalms teach us how to pray — they are the school of prayer (CCC 2585–2589)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> Always. In every situation. Joyful? Psalm 100. Afraid? Psalm 91. Guilty? Psalm 51. Grateful? Psalm 103. Angry? Psalm 13. Dying? Psalm 23. Praising? Psalm 150. There is a Psalm for every moment of life.</div>
+</div></details>
+
+<details class="book cat-wisd"><summary>📖 Proverbs — Practical Wisdom for Daily Life</summary><div class="content">
+<p><strong>Summary:</strong> A collection of wise sayings attributed primarily to Solomon, covering work, speech, friendship, money, family, and the fear of the Lord. Lady Wisdom calls out in the streets; the "valiant woman" of chapter 31 is read as a type of Mary and the Church.</p>
+<ul class="teachings">
+<li>"The fear of the Lord is the beginning of wisdom" (Prov 1:7; 9:10)</li>
+<li>Wisdom is personified as a woman — the Church Fathers see her as a figure of Christ and of Mary</li>
+<li>Practical moral guidance: guard your tongue, be diligent, avoid bad company, be generous</li>
+<li>The "valiant woman" (Prov 31) — read liturgically on feasts of holy women and of Our Lady</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need practical guidance for everyday decisions. When you're raising children and want to teach them wisdom. When you need to grow in self-discipline. A chapter a day (31 chapters, one per day of the month) is a classic devotional practice.</div>
+</div></details>
+
+<details class="book cat-wisd"><summary>📖 Ecclesiastes (Qoheleth) — The Vanity of Worldly Things</summary><div class="content">
+<p><strong>Summary:</strong> "Vanity of vanities, all is vanity!" The Preacher examines wealth, pleasure, work, and knowledge and finds them all ultimately empty without God. A bracing, honest book that strips away illusions and points toward what truly lasts.</p>
+<ul class="teachings">
+<li>Nothing under the sun can satisfy the human heart — only God can (cf. St. Augustine: "Our hearts are restless until they rest in You")</li>
+<li>"For everything there is a season" (Eccl 3:1–8) — trust in God's timing</li>
+<li>The book is not nihilistic but realistic — it clears the ground for faith</li>
+<li>Fear God and keep His commandments — this is the whole duty of man (Eccl 12:13)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're disillusioned with success, money, or worldly achievements. When you feel the emptiness of a life without God. When you need to detach from material things. A powerful book for midlife reflection.</div>
+</div></details>
+
+<details class="book cat-wisd"><summary>📖 Song of Songs — The Love of God for His People</summary><div class="content">
+<p><strong>Summary:</strong> An erotic love poem between a bride and bridegroom. The Catholic tradition, following the Church Fathers and mystics (especially St. Bernard and St. John of the Cross), reads it as an allegory of God's passionate love for Israel, Christ's love for the Church, and the soul's union with God in prayer.</p>
+<ul class="teachings">
+<li>God's love is passionate, personal, and intimate — not cold or distant</li>
+<li>The bridegroom is Christ; the bride is the Church and each individual soul</li>
+<li>Human love, when holy, reflects divine love — the sacrament of Matrimony</li>
+<li>"Set me as a seal upon your heart… love is strong as death" (Song 8:6)</li>
+<li>The mystics use this book to describe the highest stages of contemplative prayer</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to deepen your prayer life and experience God's love personally. When you're preparing for marriage or renewing your marriage. When your prayer feels dry and you need to remember that God desires intimacy with you.</div>
+</div></details>
+
+<details class="book cat-wisd"><summary>📖 Wisdom <span class="deut">DC</span> — The Wisdom of Solomon</summary><div class="content">
+<p><strong>Summary:</strong> A meditation on divine wisdom, the fate of the righteous and the wicked, and God's action in history. Written in Greek, it bridges the Old and New Testaments. The description of the "just man" who is persecuted and vindicated (Wis 2–5) is one of the clearest Old Testament prefigurations of Christ's Passion.</p>
+<ul class="teachings">
+<li>"The souls of the righteous are in the hand of God" (Wis 3:1) — read at Catholic funerals</li>
+<li>The suffering just man (Wis 2:12–20) — an astonishing prophecy of Christ's Passion</li>
+<li>"God created man for incorruption" (Wis 2:23) — death entered through the devil's envy</li>
+<li>Wisdom as a divine attribute — the Church reads this as pointing to Christ, the Wisdom of God</li>
+<li>God's mercy: "You love all things that exist… for you would not have made anything if you had hated it" (Wis 11:24)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're grieving — chapters 3–5 are among the most consoling texts in Scripture. When you're persecuted for doing right. When you want to understand why God allows evil. When you need to see Christ foreshadowed in the Old Testament.</div>
+</div></details>
+
+<details class="book cat-wisd"><summary>📖 Sirach (Ecclesiasticus) <span class="deut">DC</span> — Wisdom for Every Aspect of Life</summary><div class="content">
+<p><strong>Summary:</strong> A vast collection of practical wisdom by Ben Sira, covering friendship, speech, money, humility, parenting, dining, grief, and the fear of God. Called "Ecclesiasticus" (the Church's book) because it was so widely used in catechesis. Ends with a magnificent hymn to the heroes of faith (chapters 44–50).</p>
+<ul class="teachings">
+<li>"All wisdom comes from the Lord" (Sir 1:1) — wisdom is a gift, not merely an achievement</li>
+<li>Practical guidance on nearly every aspect of daily life — a Catholic "handbook for living"</li>
+<li>"Let us now praise famous men" (Sir 44:1) — the great litany of Old Testament saints</li>
+<li>Honour your parents, guard your tongue, be faithful in friendship, care for the poor</li>
+<li>The fear of the Lord is the crown of wisdom (Sir 1:18)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want concrete, practical wisdom for daily life. When you're forming your character or helping form someone else's. When you want to meditate on the great figures of salvation history. An excellent book for young adults.</div>
+</div></details>
+
+<h2 id="prophetic">IV. Prophetic Books <span style="font-size:.8rem;font-weight:normal">(18 Books)</span></h2>
+<p class="note">The prophets spoke God's word to Israel — calling them to repentance, announcing judgement, and promising salvation. The Catholic tradition reads the prophets as pointing directly to Christ, the Church, and the sacraments. They are divided into 4 Major Prophets and 12 Minor Prophets (minor in length, not importance) plus Lamentations and Baruch.</p>
+
+<details class="book cat-proph"><summary>📖 Isaiah — The Fifth Gospel</summary><div class="content">
+<p><strong>Summary:</strong> The greatest of the prophets. Isaiah spans judgement and consolation across 66 chapters. The Suffering Servant songs (especially ch. 53) are the most detailed Old Testament prophecy of Christ's Passion. "Comfort, comfort my people" (ch. 40) announces the coming salvation. The Church reads Isaiah more than any other prophet in the liturgy.</p>
+<ul class="teachings">
+<li>The Suffering Servant (Isa 52:13–53:12) — "He was pierced for our transgressions" — read on Good Friday</li>
+<li>The virgin shall conceive and bear a son: Emmanuel (Isa 7:14) — fulfilled in Mary (Mt 1:23)</li>
+<li>"For unto us a child is born… Wonderful Counsellor, Mighty God" (Isa 9:6) — read at Christmas</li>
+<li>The new heavens and new earth (Isa 65:17) — the eschatological hope</li>
+<li>Social justice: God rejects worship that ignores the poor (Isa 1:11–17; 58:6–7)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> During Advent and Lent (the Church reads Isaiah extensively in both seasons). When you need consolation. When you want to see Christ most clearly in the Old Testament. When you're reflecting on the meaning of suffering.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Jeremiah — The Weeping Prophet</summary><div class="content">
+<p><strong>Summary:</strong> Jeremiah prophesies the fall of Jerusalem and the Babylonian exile, enduring persecution, imprisonment, and rejection. He announces a New Covenant written on the heart — the most important covenant prophecy in the Old Testament, fulfilled in Christ at the Last Supper.</p>
+<ul class="teachings">
+<li>"I will make a new covenant… I will write my law on their hearts" (Jer 31:31–34) — the foundation of the New Testament (Heb 8:8–12)</li>
+<li>"Before I formed you in the womb I knew you" (Jer 1:5) — God's personal call and the sanctity of life</li>
+<li>Faithfulness to God's word brings suffering but also integrity</li>
+<li>False prophets tell people what they want to hear; true prophets speak God's truth</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you feel called to speak truth that nobody wants to hear. When you're lonely in your faith. When you need to understand the New Covenant of the Mass. When you feel God calling you to something difficult.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Lamentations — Grief Over Jerusalem</summary><div class="content">
+<p><strong>Summary:</strong> Five poems mourning the destruction of Jerusalem and the Temple. Raw, anguished grief — but threaded with hope. The Church chants Lamentations during Tenebrae in Holy Week.</p>
+<ul class="teachings">
+<li>It is holy to grieve — God does not demand stoicism</li>
+<li>"The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning" (Lam 3:22–23)</li>
+<li>Sin has real, devastating consequences for communities</li>
+<li>Even in the darkest moment, hope in God remains</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you are in deep grief. When tragedy has struck your community. During Holy Week, especially Tenebrae. When you need permission to weep before God and still hope.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Baruch <span class="deut">DC</span> — Exile, Repentance, and Hope</summary><div class="content">
+<p><strong>Summary:</strong> Written by Jeremiah's secretary during the Babylonian exile. A prayer of repentance, a hymn to Wisdom, and a message of hope for Jerusalem's restoration. The Church reads Baruch at the Easter Vigil.</p>
+<ul class="teachings">
+<li>Repentance in exile — acknowledging that sin led to disaster</li>
+<li>Wisdom is identified with the Law of God (Bar 4:1) — and ultimately with Christ</li>
+<li>"Take off the garment of your sorrow… put on the beauty of the glory from God" (Bar 5:1) — hope for restoration</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're in a period of exile or displacement. When you need to repent and start over. During the Easter Vigil season.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Ezekiel — Visions of Glory and Restoration</summary><div class="content">
+<p><strong>Summary:</strong> A priest-prophet in Babylon who receives extraordinary visions: the throne-chariot of God, the valley of dry bones, the new Temple. Ezekiel announces both judgement and radical hope — God will give His people a new heart and a new spirit.</p>
+<ul class="teachings">
+<li>"I will give you a new heart and put a new spirit within you" (Ezek 36:26) — fulfilled in Baptism and Confirmation</li>
+<li>The valley of dry bones (Ezek 37) — God can bring life from death, read at the Easter Vigil</li>
+<li>The Good Shepherd (Ezek 34) — God Himself will shepherd His people, fulfilled in Christ (Jn 10)</li>
+<li>Personal responsibility: "The soul that sins shall die" — each person is accountable (Ezek 18)</li>
+<li>The river flowing from the Temple (Ezek 47) — a type of Baptism and the Holy Spirit</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When something in your life feels dead and you need to believe God can revive it. When you need a new heart. When you're reflecting on Baptism. When you want to encounter the majesty of God.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Daniel — Faithfulness Under Persecution</summary><div class="content">
+<p><strong>Summary:</strong> Daniel and his companions remain faithful to God in the Babylonian court. The fiery furnace, the lions' den, and apocalyptic visions of world empires and the "Son of Man" coming on the clouds. The Catholic version includes the Prayer of Azariah, Susanna, and Bel and the Dragon.</p>
+<ul class="teachings">
+<li>The "Son of Man" (Dan 7:13–14) — Jesus' favourite title for Himself, indicating divine authority</li>
+<li>Faithfulness to God even when the state demands otherwise — a model for martyrs</li>
+<li>God rescues those who trust Him (fiery furnace, lions' den)</li>
+<li>Susanna — a story of justice, false accusation, and God's vindication of the innocent</li>
+<li>The stone cut without hands (Dan 2:34) — the Church Fathers see this as Christ born of the Virgin</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're pressured to compromise your faith. When you face false accusations. When you need courage to stand alone. When you want to understand Jesus' title "Son of Man."</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Hosea — God's Unfailing Love</summary><div class="content">
+<p><strong>Summary:</strong> God commands Hosea to marry an unfaithful wife as a living parable of God's love for unfaithful Israel. Despite betrayal, God pursues His people with relentless, tender love.</p>
+<ul class="teachings">
+<li>God's love is like a faithful spouse who will not give up on an unfaithful partner</li>
+<li>"I desire mercy, not sacrifice" (Hos 6:6) — quoted twice by Jesus (Mt 9:13; 12:7)</li>
+<li>"I will allure her into the wilderness and speak tenderly to her" (Hos 2:14)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you've been unfaithful to God and fear He's given up on you. When you need to understand God's mercy. When your own love has been betrayed and you need to see how God responds to betrayal.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Joel — The Day of the Lord and the Spirit</summary><div class="content">
+<p><strong>Summary:</strong> A locust plague becomes a metaphor for divine judgement. Joel calls for repentance and promises that God will pour out His Spirit on all flesh — fulfilled at Pentecost.</p>
+<ul class="teachings">
+<li>"Rend your hearts, not your garments" (Joel 2:13) — read on Ash Wednesday</li>
+<li>"I will pour out my Spirit on all flesh" (Joel 2:28) — Peter quotes this at Pentecost (Acts 2:17)</li>
+<li>Repentance can avert disaster</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> At the beginning of Lent. When you need to move from external religion to interior conversion. When you want to understand Pentecost.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Amos — Justice for the Poor</summary><div class="content">
+<p><strong>Summary:</strong> A shepherd-prophet who denounces the wealthy for exploiting the poor. God rejects their worship because it is disconnected from justice. One of the most powerful voices for social justice in all of Scripture.</p>
+<ul class="teachings">
+<li>"Let justice roll down like waters, and righteousness like an ever-flowing stream" (Amos 5:24)</li>
+<li>Worship without justice is an abomination to God</li>
+<li>God has a preferential concern for the poor and oppressed — a foundation of Catholic Social Teaching</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you see injustice and need prophetic fire. When you want to understand Catholic Social Teaching's biblical roots. When your faith feels disconnected from how you treat others.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Obadiah — Judgement on Pride</summary><div class="content">
+<p><strong>Summary:</strong> The shortest book in the Old Testament — a single chapter denouncing Edom for its pride and cruelty toward Israel.</p>
+<ul class="teachings"><li>Pride goes before destruction — nations and individuals who exalt themselves will be humbled</li><li>God defends His people against those who gloat over their suffering</li></ul>
+<div class="when"><strong>📌 When to read:</strong> When you struggle with pride or encounter arrogance. Brief but piercing.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Jonah — God's Mercy Extends to All</summary><div class="content">
+<p><strong>Summary:</strong> God sends Jonah to preach to Nineveh (Israel's enemy). Jonah flees, is swallowed by a great fish, repents, preaches, and Nineveh converts. But Jonah is angry that God showed mercy to pagans. Jesus cites Jonah as a sign of His own death and resurrection.</p>
+<ul class="teachings">
+<li>You cannot flee from God's call</li>
+<li>God's mercy is universal — not limited to one nation or people</li>
+<li>Jonah in the belly of the fish for three days prefigures Christ in the tomb (Mt 12:40)</li>
+<li>God cares about the repentance of all people, even our enemies</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're running from God's call. When you resent God's mercy toward people you think don't deserve it. When you need to laugh at yourself. During Lent.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Micah — What Does the Lord Require?</summary><div class="content">
+<p><strong>Summary:</strong> A contemporary of Isaiah who prophesies both judgement and hope. Contains the prophecy that the Messiah will be born in Bethlehem and one of the most beautiful summaries of true religion in all of Scripture.</p>
+<ul class="teachings">
+<li>"He has told you, O man, what is good: to do justice, love mercy, and walk humbly with your God" (Mic 6:8)</li>
+<li>"But you, Bethlehem… from you shall come forth one who is to be ruler in Israel" (Mic 5:2) — fulfilled in Christ's birth</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to simplify your faith to its essentials. During Advent (the Bethlehem prophecy). When you want a clear, beautiful summary of what God asks of you.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Nahum — God's Justice Against Oppressors</summary><div class="content">
+<p><strong>Summary:</strong> Prophecy of the fall of Nineveh (Assyria), the empire that destroyed the northern kingdom of Israel. God is slow to anger but will not leave the guilty unpunished.</p>
+<ul class="teachings"><li>God is both merciful and just — His patience has limits with unrepentant evil</li><li>"The Lord is a stronghold in the day of trouble" (Nah 1:7)</li></ul>
+<div class="when"><strong>📌 When to read:</strong> When you see powerful oppressors and wonder if justice will ever come. When you need to trust that God will act.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Habakkuk — Faith in the Face of Injustice</summary><div class="content">
+<p><strong>Summary:</strong> Habakkuk dares to question God: "Why do you tolerate injustice?" God's answer is mysterious but leads to one of the Bible's greatest declarations of faith.</p>
+<ul class="teachings">
+<li>"The righteous shall live by faith" (Hab 2:4) — quoted by St. Paul (Rom 1:17; Gal 3:11)</li>
+<li>It is permissible to question God honestly — faith includes wrestling</li>
+<li>"Though the fig tree does not blossom… yet I will rejoice in the Lord" (Hab 3:17–18)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're angry at God about injustice. When you need to trust God despite seeing no evidence of His action. When you need to declare faith in the dark.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Zephaniah — The Day of the Lord and the Humble Remnant</summary><div class="content">
+<p><strong>Summary:</strong> Announces a coming day of judgement but also promises that God will save a humble remnant and rejoice over His people with singing.</p>
+<ul class="teachings">
+<li>"The Lord your God is in your midst… he will rejoice over you with gladness, he will quiet you by his love" (Zeph 3:17)</li>
+<li>God preserves the humble and lowly — the <span class="latin">anawim</span>, the poor of the Lord</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you feel small and insignificant. When you need to hear that God rejoices over you. When you want to understand the spirituality of humility.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Haggai — Rebuild the Temple</summary><div class="content">
+<p><strong>Summary:</strong> After the exile, the people have returned but neglected rebuilding the Temple. Haggai urges them to put God first and rebuild.</p>
+<ul class="teachings"><li>When we neglect God's house (worship, prayer), everything else suffers</li><li>"The glory of this latter house shall be greater than the former" (Hag 2:9) — fulfilled in Christ</li></ul>
+<div class="when"><strong>📌 When to read:</strong> When you've been neglecting prayer and worship. When you need motivation to put God first in your priorities.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Zechariah — Messianic Visions</summary><div class="content">
+<p><strong>Summary:</strong> Rich in Messianic prophecy — the king riding on a donkey, the thirty pieces of silver, the pierced one, the shepherd struck and the sheep scattered. The New Testament quotes Zechariah extensively in the Passion narratives.</p>
+<ul class="teachings">
+<li>"Rejoice greatly, O daughter of Zion! Your king comes to you… humble and riding on a donkey" (Zech 9:9) — fulfilled on Palm Sunday</li>
+<li>"They shall look on him whom they have pierced" (Zech 12:10) — fulfilled at the Crucifixion (Jn 19:37)</li>
+<li>Thirty pieces of silver (Zech 11:12–13) — the price of Judas's betrayal</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> During Holy Week — Zechariah is woven throughout the Passion. When you want to see how precisely the Old Testament points to Christ.</div>
+</div></details>
+
+<details class="book cat-proph"><summary>📖 Malachi — The Last Prophet Before Christ</summary><div class="content">
+<p><strong>Summary:</strong> The final Old Testament prophet. Malachi denounces corrupt worship and unfaithful priests, announces the coming of a messenger to prepare the way (John the Baptist), and prophesies a pure offering among the nations — which the Church has always understood as the Eucharist.</p>
+<ul class="teachings">
+<li>"From the rising of the sun to its setting, a pure offering shall be made to my name among the nations" (Mal 1:11) — the Mass as the fulfilment of this prophecy (CCC 1350)</li>
+<li>"I will send my messenger to prepare the way before me" (Mal 3:1) — John the Baptist</li>
+<li>"I will send you Elijah the prophet before the great day of the Lord" (Mal 4:5) — John the Baptist as the new Elijah</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand the Eucharist as sacrifice. During Advent (the messenger who prepares the way). When you're concerned about the quality of worship in the Church.</div>
+</div></details>
+
+<!-- ============================================================ -->
+<!-- NEW TESTAMENT -->
+<!-- ============================================================ -->
+
+<h2 id="gospels">V. The Holy Gospels <span style="font-size:.8rem;font-weight:normal">(4 Books)</span></h2>
+<p class="note">The Gospels are the heart of all Scripture, for they are the principal witness to the life and teaching of Jesus Christ. The Church venerates them above all other books — at Mass, we stand for the Gospel reading and the Book of Gospels is incensed and kissed. <span class="latin">"Evangelium Domini — Laus tibi, Christe."</span></p>
+
+<details class="book cat-gosp"><summary>📖 Matthew — Christ the King and New Moses</summary><div class="content">
+<p><strong>Summary:</strong> Written for a Jewish-Christian audience, Matthew presents Jesus as the fulfilment of the Old Testament — the new Moses who gives the new Law (the Sermon on the Mount), the Son of David, the promised Messiah. Contains the most detailed account of Jesus' teaching, including the Beatitudes, the Our Father, and the parables of the Kingdom.</p>
+<ul class="teachings">
+<li>The Beatitudes (Mt 5:3–12) — the charter of the Christian life (CCC 1716–1729)</li>
+<li>"You are Peter, and on this rock I will build my Church" (Mt 16:18) — the foundation of the papacy</li>
+<li>The Great Commission: "Go and make disciples of all nations, baptising them…" (Mt 28:19)</li>
+<li>The Last Judgement: "Whatever you did for the least of these, you did for me" (Mt 25:40)</li>
+<li>The institution of the Eucharist: "This is my body… this is my blood of the covenant" (Mt 26:26–28)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want a comprehensive portrait of Jesus' teaching. When you need the Sermon on the Mount to challenge and inspire you. When you want to understand the Church's authority. The most "catechetical" Gospel.</div>
+</div></details>
+
+<details class="book cat-gosp"><summary>📖 Mark — The Suffering Servant in Action</summary><div class="content">
+<p><strong>Summary:</strong> The shortest and most urgent Gospel — "immediately" is Mark's favourite word. Jesus is presented as the powerful Son of God who nevertheless suffers and dies. The Messianic Secret: Jesus repeatedly tells people not to reveal His identity until the Cross reveals who He truly is. The climax: a Roman centurion at the Cross declares, "Truly this man was the Son of God."</p>
+<ul class="teachings">
+<li>Discipleship means taking up the cross: "If anyone would come after me, let him deny himself and take up his cross" (Mk 8:34)</li>
+<li>Jesus' power is revealed through service and suffering, not worldly glory</li>
+<li>The cost of following Christ — the disciples repeatedly misunderstand</li>
+<li>Faith and fear are opposites: "Why are you afraid? Have you still no faith?" (Mk 4:40)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to encounter Jesus quickly and powerfully. When you're struggling with what it costs to follow Christ. When you're afraid. The best Gospel to read in one sitting.</div>
+</div></details>
+
+<details class="book cat-gosp"><summary>📖 Luke — The Gospel of Mercy</summary><div class="content">
+<p><strong>Summary:</strong> Written by a Gentile physician and companion of Paul, Luke emphasises God's mercy, the poor, women, sinners, and the outcast. Contains the Infancy Narrative (Annunciation, Visitation, Magnificat, Nativity), the parables of the Good Samaritan and the Prodigal Son, and the Road to Emmaus. Luke gives us more of Mary than any other Gospel.</p>
+<ul class="teachings">
+<li>The Magnificat (Lk 1:46–55) — Mary's hymn, the Church's daily evening prayer</li>
+<li>The Prodigal Son (Lk 15:11–32) — the greatest parable of God's mercy</li>
+<li>The Good Samaritan (Lk 10:25–37) — love of neighbour knows no boundaries</li>
+<li>"Today you will be with me in Paradise" (Lk 23:43) — mercy even at the last moment</li>
+<li>The Road to Emmaus (Lk 24:13–35) — Christ revealed in the breaking of bread (the Mass)</li>
+<li>Jesus' concern for the poor, women, and sinners — the foundation of the Church's social mission</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need mercy — for yourself or to extend to others. When you feel far from God and need the Prodigal Son. When you want to know Mary better. When you want to understand the Mass (Emmaus). The most beautiful Gospel for anyone who feels unworthy.</div>
+</div></details>
+
+<details class="book cat-gosp"><summary>📖 John — The Word Made Flesh</summary><div class="content">
+<p><strong>Summary:</strong> The most theological Gospel. John presents Jesus as the eternal Word (<span class="latin">Logos</span>) who became flesh. Seven great "I AM" statements, seven signs, and extended discourses on the Eucharist (ch. 6), the Good Shepherd (ch. 10), and the Vine (ch. 15). The Farewell Discourse (ch. 13–17) and the Passion narrative are the summit of New Testament theology.</p>
+<ul class="teachings">
+<li>"In the beginning was the Word, and the Word was with God, and the Word was God" (Jn 1:1) — the divinity of Christ</li>
+<li>"The Word became flesh and dwelt among us" (Jn 1:14) — the Incarnation</li>
+<li>The Bread of Life discourse: "Unless you eat the flesh of the Son of Man and drink his blood, you have no life in you" (Jn 6:53) — the Eucharist</li>
+<li>"I am the way, the truth, and the life" (Jn 14:6)</li>
+<li>"God so loved the world that he gave his only-begotten Son" (Jn 3:16)</li>
+<li>The Beloved Disciple and Mary at the Cross (Jn 19:26–27) — Mary as Mother of the Church</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to go deep into who Jesus is. When you need to understand the Eucharist. When you want to pray with Jesus' own words to the Father (ch. 17). During Lent and Easter (the Church reads John extensively). The Gospel for contemplatives.</div>
+</div></details>
+
+<h2 id="acts">VI. Acts of the Apostles</h2>
+
+<details class="book cat-acts"><summary>📖 Acts of the Apostles — The Birth of the Church</summary><div class="content">
+<p><strong>Summary:</strong> Luke's sequel to his Gospel. The Holy Spirit descends at Pentecost, the Church is born, and the Gospel spreads from Jerusalem to Rome. Peter and Paul are the central figures. Acts shows the early Church celebrating the Eucharist, baptising, confirming, ordaining, and living in community — the sacramental life of the Church from day one.</p>
+<ul class="teachings">
+<li>Pentecost — the Holy Spirit empowers the Church for mission (Acts 2)</li>
+<li>The early Church: "They devoted themselves to the apostles' teaching, the breaking of bread, and the prayers" (Acts 2:42) — the four marks of Catholic life</li>
+<li>Baptism is essential: "Repent and be baptised" (Acts 2:38)</li>
+<li>The Council of Jerusalem (Acts 15) — the Church has authority to make binding decisions guided by the Holy Spirit</li>
+<li>The Gospel is for all nations — the conversion of Cornelius breaks the Jewish-Gentile barrier</li>
+<li>Suffering and persecution are normal for the Church — the apostles rejoice in suffering for Christ's name</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand why the Catholic Church is structured the way it is. When you need the fire of Pentecost. When you're discouraged about evangelisation. During the Easter season (the Church reads Acts daily from Easter to Pentecost).</div>
+</div></details>
+
+<h2 id="pauline">VII. Pauline Epistles <span style="font-size:.8rem;font-weight:normal">(14 Letters)</span></h2>
+<p class="note">St. Paul's letters are the earliest Christian writings and form the theological backbone of the New Testament. They address real communities with real problems, and the Church's doctrine on justification, the sacraments, the Body of Christ, and the moral life draws heavily from them. Hebrews is included in the Catholic canon among the Pauline corpus.</p>
+
+<details class="book cat-paul"><summary>📖 Romans — The Gospel of Salvation</summary><div class="content">
+<p><strong>Summary:</strong> Paul's theological masterpiece, written to the Church in Rome. Lays out the universal need for salvation, justification by faith working through love, the role of the Law, life in the Spirit, and God's plan for Israel. The most systematic presentation of the Gospel in the New Testament.</p>
+<ul class="teachings">
+<li>"All have sinned and fall short of the glory of God" (Rom 3:23) — universal need for redemption</li>
+<li>Justification by faith — but Catholic teaching emphasises faith working through love (cf. Gal 5:6; CCC 1814–1816)</li>
+<li>"Where sin increased, grace abounded all the more" (Rom 5:20)</li>
+<li>Baptism: dying and rising with Christ (Rom 6:3–4)</li>
+<li>"Nothing can separate us from the love of God in Christ Jesus" (Rom 8:38–39)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand salvation theologically. When you doubt God's love. When you need assurance that nothing can separate you from Christ. The most important epistle for understanding Catholic soteriology.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 1 Corinthians — Unity, Morality, and the Eucharist</summary><div class="content">
+<p><strong>Summary:</strong> Paul addresses a divided, morally confused community. Covers factions, sexual immorality, lawsuits, marriage, the Eucharist, spiritual gifts, and the resurrection. Contains the earliest written account of the Last Supper and the great hymn to love.</p>
+<ul class="teachings">
+<li>The Eucharist: "This is my body… do this in remembrance of me" (1 Cor 11:23–26) — the earliest Eucharistic text</li>
+<li>The Body of Christ: the Church is one body with many members (1 Cor 12)</li>
+<li>The hymn to love: "Love is patient, love is kind…" (1 Cor 13)</li>
+<li>The resurrection of the dead: "If Christ has not been raised, your faith is in vain" (1 Cor 15:14)</li>
+<li>Receiving the Eucharist unworthily brings judgement (1 Cor 11:27–29) — basis for the discipline of Communion</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When your community is divided. When you're preparing for marriage (ch. 13). When you need to understand the Eucharist. When you doubt the resurrection.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 2 Corinthians — Strength in Weakness</summary><div class="content">
+<p><strong>Summary:</strong> Paul's most personal letter — defending his apostleship, revealing his sufferings, and teaching that God's power is made perfect in weakness. Contains the theology of the "new creation" and the ministry of reconciliation.</p>
+<ul class="teachings">
+<li>"My grace is sufficient for you, for my power is made perfect in weakness" (2 Cor 12:9)</li>
+<li>"If anyone is in Christ, he is a new creation" (2 Cor 5:17)</li>
+<li>The ministry of reconciliation — the basis for the sacrament of Confession (2 Cor 5:18–20)</li>
+<li>Generous giving: "God loves a cheerful giver" (2 Cor 9:7)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you feel weak, inadequate, or broken. When you need to embrace your limitations as the place where God works. When you're struggling with criticism or rejection.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Galatians — Freedom in Christ</summary><div class="content">
+<p><strong>Summary:</strong> Paul's passionate defence of the Gospel against those who would require Gentile Christians to follow the Mosaic Law. Christian freedom is not licence but life in the Spirit.</p>
+<ul class="teachings">
+<li>"It is no longer I who live, but Christ who lives in me" (Gal 2:20)</li>
+<li>Freedom from the Law does not mean freedom from morality — the fruit of the Spirit (Gal 5:22–23)</li>
+<li>"There is neither Jew nor Greek, slave nor free, male nor female — you are all one in Christ" (Gal 3:28)</li>
+<li>"Bear one another's burdens, and so fulfil the law of Christ" (Gal 6:2)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you feel burdened by legalism or scrupulosity. When you need to understand Christian freedom. When you want to grow in the fruits of the Spirit.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Ephesians — The Mystery of the Church</summary><div class="content">
+<p><strong>Summary:</strong> A cosmic vision of God's plan to unite all things in Christ through the Church. Covers election, redemption, the unity of Jew and Gentile, the Church as the Body and Bride of Christ, and the spiritual combat.</p>
+<ul class="teachings">
+<li>The Church is the Body of Christ and His Bride (Eph 5:25–32) — the basis for the sacramentality of marriage</li>
+<li>"By grace you have been saved through faith, and this is not your own doing; it is the gift of God" (Eph 2:8)</li>
+<li>The armour of God (Eph 6:10–18) — the spiritual combat</li>
+<li>"One Lord, one faith, one baptism" (Eph 4:5)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand the Church's identity and mission. When you're preparing for marriage. When you need to put on the armour of God for spiritual battle.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Philippians — Joy in All Circumstances</summary><div class="content">
+<p><strong>Summary:</strong> Written from prison, yet overflowing with joy. Contains the great Christological hymn (Christ emptied Himself, took the form of a servant) and Paul's testimony of finding contentment in all circumstances.</p>
+<ul class="teachings">
+<li>The <span class="latin">Kenosis</span> hymn: Christ "emptied himself, taking the form of a servant" (Phil 2:5–11)</li>
+<li>"Rejoice in the Lord always; again I say, rejoice!" (Phil 4:4)</li>
+<li>"I can do all things through Christ who strengthens me" (Phil 4:13)</li>
+<li>"To live is Christ, and to die is gain" (Phil 1:21)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need joy in difficult circumstances. When you're in a "prison" of any kind. When you need to learn contentment. One of the most uplifting books in the Bible.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Colossians — The Supremacy of Christ</summary><div class="content">
+<p><strong>Summary:</strong> Christ is supreme over all creation and all powers. Against false teachings that diminish Christ, Paul declares His absolute pre-eminence. Read at the Easter Vigil.</p>
+<ul class="teachings">
+<li>"He is the image of the invisible God, the firstborn of all creation" (Col 1:15)</li>
+<li>"In him the fullness of God was pleased to dwell" (Col 1:19)</li>
+<li>"If you have been raised with Christ, seek the things that are above" (Col 3:1) — read at the Easter Vigil Mass</li>
+<li>Put on compassion, kindness, humility, meekness, patience, and above all love (Col 3:12–14)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to refocus on Christ's supremacy. When you're tempted by New Age or syncretistic spirituality. During Easter season.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 1 Thessalonians — Hope in the Second Coming</summary><div class="content">
+<p><strong>Summary:</strong> Paul's earliest letter. Encourages a young community facing persecution and addresses questions about the dead in Christ and the Lord's return.</p>
+<ul class="teachings">
+<li>"The dead in Christ will rise first" (1 Thess 4:16) — hope for the faithful departed</li>
+<li>"Rejoice always, pray without ceasing, give thanks in all circumstances" (1 Thess 5:16–18)</li>
+<li>Be watchful — the day of the Lord comes like a thief in the night</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're grieving someone who has died. When you need hope in the resurrection. When you want to cultivate a spirit of constant prayer and gratitude.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 2 Thessalonians — Perseverance and the End Times</summary><div class="content">
+<p><strong>Summary:</strong> Corrects misunderstandings about the Second Coming — it has not yet happened, and certain signs must precede it. Encourages perseverance and warns against idleness.</p>
+<ul class="teachings">
+<li>The Second Coming is real but not imminent in the way some expected — hold fast to Tradition</li>
+<li>"Stand firm and hold to the traditions you were taught, whether by word of mouth or by letter" (2 Thess 2:15) — a key text for Sacred Tradition</li>
+<li>"If anyone will not work, let him not eat" (2 Thess 3:10) — the dignity of work</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're anxious about the end times. When you need to understand the Catholic teaching on Tradition alongside Scripture. When you need motivation to work diligently.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 1 Timothy — Pastoral Leadership</summary><div class="content">
+<p><strong>Summary:</strong> Paul instructs his young protégé Timothy on leading the Church in Ephesus — qualifications for bishops and deacons, sound doctrine, care for widows, and the fight of faith.</p>
+<ul class="teachings">
+<li>"The Church of the living God, the pillar and foundation of truth" (1 Tim 3:15) — the Church's teaching authority</li>
+<li>Qualifications for bishops and deacons (1 Tim 3) — the basis for Holy Orders</li>
+<li>"The love of money is the root of all evil" (1 Tim 6:10)</li>
+<li>"Fight the good fight of faith" (1 Tim 6:12)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're in a leadership role in the Church. When you want to understand why the Church has bishops, priests, and deacons. When you need to guard against false teaching.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 2 Timothy — Paul's Final Testament</summary><div class="content">
+<p><strong>Summary:</strong> Paul's last letter, written from prison before his martyrdom. A deeply moving farewell — passing the torch to Timothy, urging him to persevere, and expressing confidence in the crown of righteousness awaiting him.</p>
+<ul class="teachings">
+<li>"I have fought the good fight, I have finished the race, I have kept the faith" (2 Tim 4:7)</li>
+<li>"All Scripture is inspired by God and profitable for teaching" (2 Tim 3:16)</li>
+<li>"Preach the word; be ready in season and out of season" (2 Tim 4:2)</li>
+<li>Suffering for the Gospel is part of the apostolic calling</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're nearing the end of a chapter in life. When you need courage to persevere. When you want to hear the voice of a saint facing death with confidence. Profoundly moving.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Titus — Sound Doctrine and Good Works</summary><div class="content">
+<p><strong>Summary:</strong> Instructions to Titus on organising the Church in Crete — appointing elders, teaching sound doctrine, and living lives that adorn the Gospel.</p>
+<ul class="teachings">
+<li>"The grace of God has appeared, bringing salvation to all" (Tit 2:11)</li>
+<li>Good works are the fruit of grace, not its cause — but they are essential</li>
+<li>Church leadership requires moral integrity</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need a concise summary of how grace transforms daily life. When you're involved in parish organisation.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Philemon — Forgiveness and Brotherhood</summary><div class="content">
+<p><strong>Summary:</strong> A brief, personal letter asking Philemon to receive back his runaway slave Onesimus — no longer as a slave but as a brother in Christ. A masterclass in persuasion, charity, and the social implications of the Gospel.</p>
+<ul class="teachings">
+<li>In Christ, all social barriers are transcended — slave and master become brothers</li>
+<li>Forgiveness and reconciliation are at the heart of Christian community</li>
+<li>Paul appeals to love, not authority — a model of Christian leadership</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to forgive someone. When you need to see how the Gospel transforms social relationships. Brief enough to read in five minutes — but it will stay with you.</div>
+</div></details>
+
+<details class="book cat-paul"><summary>📖 Hebrews — Christ the Eternal High Priest</summary><div class="content">
+<p><strong>Summary:</strong> A profound theological treatise on Christ's superiority to the angels, Moses, and the Levitical priesthood. Christ is the eternal High Priest after the order of Melchizedek, who offered Himself once for all. The "hall of faith" (ch. 11) celebrates the heroes of the Old Testament. Essential for understanding the Mass as sacrifice.</p>
+<ul class="teachings">
+<li>Christ is the one, perfect, eternal High Priest (Heb 4:14–16; 7–10) — the foundation of Catholic priesthood</li>
+<li>The Mass is a participation in Christ's one sacrifice, not a repetition (Heb 9:11–14; 10:10)</li>
+<li>"Faith is the substance of things hoped for, the evidence of things not seen" (Heb 11:1)</li>
+<li>The New Covenant is superior to the Old — fulfilled, not abolished</li>
+<li>"Let us run with perseverance the race set before us, looking to Jesus" (Heb 12:1–2)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you want to understand why the Mass is a sacrifice. When your faith is wavering and you need the "hall of faith" (ch. 11) to inspire you. When you want to understand Christ's priesthood. The most important book for understanding Catholic liturgical theology.</div>
+</div></details>
+
+<h2 id="catholic-epistles">VIII. Catholic Epistles <span style="font-size:.8rem;font-weight:normal">(7 Letters)</span></h2>
+<p class="note">Called "catholic" (universal) because they are addressed to the whole Church rather than specific communities. These letters complement Paul's theology with emphases on practical holiness, perseverance, and the dangers of false teaching.</p>
+
+<details class="book cat-cath"><summary>📖 James — Faith and Works</summary><div class="content">
+<p><strong>Summary:</strong> A practical letter on living the faith — controlling the tongue, caring for the poor, patience in suffering, and the relationship between faith and works. Luther famously disliked it, but the Catholic Church treasures it as a corrective to any faith that lacks action.</p>
+<ul class="teachings">
+<li>"Faith without works is dead" (Jas 2:26) — the Catholic balance of faith and works (CCC 1815–1816)</li>
+<li>"Is anyone among you sick? Let him call for the elders of the Church, and let them pray over him, anointing him with oil" (Jas 5:14) — the sacrament of the Anointing of the Sick</li>
+<li>"Confess your sins to one another" (Jas 5:16) — a basis for sacramental Confession</li>
+<li>The tongue is a fire — guard your speech (Jas 3:1–12)</li>
+<li>"Every good and perfect gift comes from above" (Jas 1:17)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When your faith feels abstract and you need to put it into action. When you struggle with gossip or harsh speech. When someone tells you "faith alone" is enough — James says otherwise. When you're sick and want to understand the Anointing of the Sick.</div>
+</div></details>
+
+<details class="book cat-cath"><summary>📖 1 Peter — Hope Through Suffering</summary><div class="content">
+<p><strong>Summary:</strong> Peter writes to persecuted Christians scattered across Asia Minor, encouraging them to stand firm. Suffering for Christ is a share in His Passion. Contains rich baptismal theology and the call to be "a royal priesthood, a holy nation."</p>
+<ul class="teachings">
+<li>"You are a chosen race, a royal priesthood, a holy nation" (1 Pet 2:9) — the common priesthood of all the baptised (CCC 1268)</li>
+<li>Suffering for doing good is a grace — "Christ also suffered for you, leaving you an example" (1 Pet 2:21)</li>
+<li>Christ "descended into hell" (1 Pet 3:19; 4:6) — the basis for the Creed's article on the descent</li>
+<li>"Always be ready to give a reason for the hope that is in you" (1 Pet 3:15)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you're suffering for your faith. When you need hope in persecution. When you want to understand your baptismal identity. When someone asks you why you believe.</div>
+</div></details>
+
+<details class="book cat-cath"><summary>📖 2 Peter — Perseverance and Truth</summary><div class="content">
+<p><strong>Summary:</strong> Peter's farewell letter, warning against false teachers and affirming the certainty of Christ's return. Contains the important statement that Scripture requires authoritative interpretation.</p>
+<ul class="teachings">
+<li>"No prophecy of Scripture is a matter of one's own interpretation" (2 Pet 1:20) — Scripture needs the Church's guidance</li>
+<li>"With the Lord one day is as a thousand years" (2 Pet 3:8) — patience regarding the Second Coming</li>
+<li>Grow in virtue: faith, goodness, knowledge, self-control, perseverance, godliness, mutual affection, love (2 Pet 1:5–7)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you encounter people who twist Scripture. When you're impatient for God to act. When you want to understand why Catholics don't practise <em>sola scriptura</em>.</div>
+</div></details>
+
+<details class="book cat-cath"><summary>📖 1 John — God Is Love</summary><div class="content">
+<p><strong>Summary:</strong> A meditation on love, light, and truth. John writes to combat early heresies that denied Christ's humanity. The letter's central message: God is love, and those who abide in love abide in God.</p>
+<ul class="teachings">
+<li>"God is love" (1 Jn 4:8, 16) — the most concise definition of God in Scripture</li>
+<li>"If we confess our sins, he is faithful and just to forgive us" (1 Jn 1:9) — the basis for Confession</li>
+<li>"We love because he first loved us" (1 Jn 4:19)</li>
+<li>"There is no fear in love; perfect love casts out fear" (1 Jn 4:18)</li>
+<li>The test of true faith: love of God and love of neighbour are inseparable</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to be reminded that God loves you. When you're afraid. When you need to examine whether your faith is producing love. One of the most consoling books in the Bible.</div>
+</div></details>
+
+<details class="book cat-cath"><summary>📖 2 John — Truth and Love Together</summary><div class="content">
+<p><strong>Summary:</strong> A brief letter warning against false teachers who deny Christ came in the flesh. Truth and love must go together — you cannot have one without the other.</p>
+<ul class="teachings"><li>Love must walk in truth — sentimentality without doctrine is not Christian love</li><li>Guard against those who deny the Incarnation</li></ul>
+<div class="when"><strong>📌 When to read:</strong> When you need to balance charity with doctrinal clarity. Very brief — 13 verses.</div>
+</div></details>
+
+<details class="book cat-cath"><summary>📖 3 John — Hospitality and Leadership</summary><div class="content">
+<p><strong>Summary:</strong> A personal note praising Gaius for his hospitality and criticising Diotrephes for his arrogance. The shortest book in the Bible.</p>
+<ul class="teachings"><li>Christian hospitality is a form of participation in the truth</li><li>Church leaders must serve, not dominate</li></ul>
+<div class="when"><strong>📌 When to read:</strong> When you need a reminder about the importance of hospitality and humility in leadership. 15 verses.</div>
+</div></details>
+
+<details class="book cat-cath"><summary>📖 Jude — Contend for the Faith</summary><div class="content">
+<p><strong>Summary:</strong> A short, fiery letter warning against false teachers who have infiltrated the community. Urges believers to "contend for the faith once delivered to the saints."</p>
+<ul class="teachings">
+<li>"Contend for the faith once for all delivered to the saints" (Jude 3) — the faith is a deposit to be guarded, not reinvented</li>
+<li>References to non-canonical Jewish traditions (Enoch, the Assumption of Moses) — showing the breadth of Tradition</li>
+<li>The great doxology: "To him who is able to keep you from falling… to the only God our Saviour" (Jude 24–25)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When the faith is under attack from within. When you need to defend Catholic teaching. When you need a powerful closing prayer (the doxology).</div>
+</div></details>
+
+<h2 id="revelation">IX. The Book of Revelation</h2>
+
+<details class="book cat-rev"><summary>📖 Revelation (Apocalypse) — The Lamb Who Was Slain</summary><div class="content">
+<p><strong>Summary:</strong> The final book of the Bible — a vision given to St. John on the island of Patmos. Not primarily a prediction of the future but a liturgical, symbolic unveiling (<span class="latin">apokalypsis</span> = unveiling) of the cosmic battle between good and evil, the victory of the Lamb, and the heavenly liturgy. The Catholic tradition reads Revelation as deeply connected to the Mass — the heavenly worship John sees is what we participate in at every Eucharist.</p>
+<ul class="teachings">
+<li>The Lamb who was slain is worthy to open the scroll (Rev 5) — Christ's sacrifice is the key to all of history</li>
+<li>The heavenly liturgy: incense, hymns, the altar, the "Holy, Holy, Holy" (Rev 4:8) — the Mass on earth mirrors heaven</li>
+<li>The Woman clothed with the sun (Rev 12) — the Church reads this as Mary and as the Church</li>
+<li>"Behold, I make all things new" (Rev 21:5) — the new heaven and new earth</li>
+<li>The New Jerusalem as the Bride of the Lamb (Rev 21) — the Church in her final glory</li>
+<li>"Blessed are those who are called to the marriage supper of the Lamb" (Rev 19:9) — said at every Mass before Communion</li>
+<li>The final victory of Christ is certain — evil does not have the last word</li>
+<li><span class="latin">"Maranatha"</span> — "Come, Lord Jesus!" (Rev 22:20)</li>
+</ul>
+<div class="when"><strong>📌 When to read:</strong> When the world feels like it's falling apart and you need to see the bigger picture. When you want to understand the Mass as participation in heavenly worship. When you need assurance that Christ wins in the end. When you're afraid of death and need to see the New Jerusalem. Not a book of fear — it is a book of hope.</div>
+</div></details>
+
+<div class="cross">✠</div>
+<p style="text-align:center;color:var(--muted);font-size:.85rem;margin:1rem 0"><span class="latin">Verbum Domini manet in aeternum</span> — The Word of the Lord endures forever (1 Pet 1:25)</p>
+</div>
+</body>
 </html>
